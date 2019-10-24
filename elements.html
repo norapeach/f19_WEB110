@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/portal.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/tables.css" />
  </head>
  <body>
-     <header>
+     <header id="top">
      <h1>Nora Peachey: HTML Elements</h1>
      <nav class="topnav" id="myTopnav">
        <a href="index.html">Welcome</a>
@@ -26,13 +27,281 @@
      </header>
      
    <main class="wrapper">
-       
-       <h2 class="subheader">HTML Elements</h2>
-       
-       <p>This placeholder text will soon be replaced with a table listing html elements, descriptions, etc.</p>
-
+       <h2 class="summary">HTML Elements</h2>
+       <table aria-describedby="summary">
+           <caption>The following four column table presents the HTML element information on (41) commonly used tags that I have learned thus far: </caption>
+           <thead>
+               <tr>
+                   <th class="col1" scope="col">Tag</th>
+                   <th scope="col">Description</th>
+                   <th class="col1" scope="col">Block, Inline or N/A</th>
+                   <th scope="col">Container or Empty</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_comment.asp" target="_blank">&lt;!-- --&gt;</a></td>
+                   <td>HTML comments are invisible on a browser unless the source code is viewed. They are used to provide instructions and credit</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_doctype.aspr3c1" target="_blank">&lt;!DOCTYPE&gt;</a></td>
+                   <td>Mandatory first declaration in an HTML document that specifies rendering instructions for your browser</td>
+                   <td>n/a</td>
+                   <td>empty</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_a.asp" target="_blank">&lt;a&gt;</a></td>
+                   <td>Defines a hyperlink, which is used to link from one page to another or to another location within a page. The all important <em>href attribute</em> frequently used within the tag indicates the link's destination</td>
+                   <td>inline</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_article.asp" target="_blank">&lt;article&gt;</a></td>
+                   <td>Provides a semantic label to independent, self-contained content that should make sense on its own and could be placed or reused separately from the rest of the site. Common examples are blog posts or comments</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_aside.asp" target="_blank">&lt;aside&gt;</a></td>
+                   <td>Used to describe, summarize or identify content that is tangentially related to the primary content of a page, or the content surrounding the aside. Frequently used for ads or pull quotes</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td id="body"><a href="https://www.w3schools.com/TAGs/tag_body.asp" target="_blank">&lt;body&gt;</a></td>
+                   <td>Defines and contains all the content of an HTML document, e.g. text, links, images and tables like this one</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_br.asp" target="_blank">&lt;br&gt;</a></td>
+                   <td>Inserts a single line break, but is not intended for separating paragraphs</td>
+                   <td>inline</td>
+                   <td>empty</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_dd.asp" target="_blank">&lt;dd&gt;</a></td>
+                   <td>Description tag is used to describe a term or name in a description list and is always used together with the &lt;dl&gt; and &lt;dt&gt; tags. It can contain paragraphs, images, links, etc.</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_div.asp" target="_blank">&lt;div&gt;</a></td>
+                   <td>A generic container element used as a last resort when no other semantically rich elements apply group related content, to apply styles with CSS and or perform JavaScript tasks</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_dl.asp" target="_blank">&lt;dl&gt;</a></td>
+                   <td>Stands for <i>description list</i> and contains the the &lt;dt&gt; and &lt;dd&gt; tags that define and describe terms/names</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_dt.asp" target="_blank">&lt;dt&gt;</a></td>
+                   <td>Stands for <i>description term</i> - this tag defines a term/name in a description list</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_em.asp" target="_blank">&lt;em&gt;</a></td>
+                   <td>A semantically rich, logical tag that renders emphasized text both visually and for assistive devices</td>
+                   <td>inline</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_fieldset.asp" target="_blank">&lt;fieldset&gt;</a></td>
+                   <td>Used to group related elements in a form and draws a box around the contained elements. If a caption is needed, the &lt;legend&gt; tag is helful</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_figcaption.asp" target="_blank">&lt;figcaption&gt;</a></td>
+                   <td>Used within the &lt;figure&gt; element to define a caption within that container and can be either the first or last child</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_figure.asp" target="_blank">&lt;figure&gt;</a></td>
+                   <td>Used to mark up "self-contained content" like illustrations, photos, code listings, etc. Although related to the main content of the page, this element's position is independent and if taken out of the page, it wouldn't affect the document flow or meaning</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_footer.asp" target="_blank">&lt;footer&gt;</a></td>
+                   <td>Defines the footer of the document or section and can be used more than once in a document. This tag usually contains:
+                       <ul>
+                        <li>authorship information</li>
+                        <li>copyright information</li>
+                        <li>contact information</li>
+                        <li>back to top links</li>
+                       </ul>
+                   </td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_form.asp" target="_blank">&lt;form&gt;</a></td>
+                   <td>Used to create an HTML form for user input in conjunction with a number of other form elements, e.g. &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt; etc.</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_hn.asp" target="_blank">&lt;h1&gt; to &lt;h6&gt;</a></td>
+                   <td>Used to define HTML headings and provide semantic structure to the HTML document via the heading number</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td id="head"><a href="https://www.w3schools.com/TAGs/tag_head.asp" target="_blank">&lt;head&gt;</a></td>
+                   <td>The head element occurs after the &lt;!DOCTYPE&gt; and &lt;html&gt; tags and contains all of the meta data for the page including but not limited to the &lt;title&gt;, &lt;meta&gt;, and stylesheet &lt;link&gt; tags</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_header.asp" target="_blank">&lt;header&gt;</a></td>
+                   <td>Groups introductory content and is frequently used to contain a set of navigational links. The header element typically contains one or more heading elements, logos or icons, authorship information etc. There can be several &lt;header&gt; within an HTML document</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_html.asp" target="_blank">&lt;html&gt;</a></td>
+                   <td>Representing the root of the document and acting as the container for all other HTML elements - besides the &lt;!DOCTYPE&gt; tag - this tag tells the browser that the document is in fact an HTML document</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_iframe.asp" target="_blank">&lt;iframe&gt;</a></td>
+                   <td>Specifices an inline frame that embeds another document, such as content from a third-party webpage like Google Maps or Youtube, within an HTML document. <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies" target="_blank"><i>This MDN tutorial </i></a> includes additional info and cautions on using iframes</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href="https://www.w3schools.com/TAGs/tag_img.asp" target="_blank">&lt;img /&gt;</a></td>
+                   <td>Defines an image in an HTML page. The first required attribute src="path/imageName.png" links to the actual location of the image - this could be either a path to the folder where the image file is located or an absolute url. The alt="description of image" attribute increases accessibility and will also display if the src path breaks.</td>
+                   <td>inline</td>
+                   <td>empty</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_input.asp target="_blank">&lt;input&gt;</a></td>
+                   <td>Used within the &lt;input&gt; element to specify an input field where the user can enter data. The input field itself can vary greatly in its look and function depending on the value passed to the <em><a href=”https://www.w3schools.com/TAGs/att_input_type.asp”>type attribute</a></em></td>
+                   <td>inline</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_label.asp target="_blank">&lt;label&gt;</a></td>
+                   <td>Provides a literal lable for other elements such as: &lt;button&gt;, &lt;input&gt;, &lt;meter&gt;, &lt;output&gt;, &lt;textarea&gt;. Although it does not render anything special, its a usability improvement that toggles the control if the user clicks or taps within the text contained by the &lt;label&gt; element. In order to bind the label with a related control, the for attribute should = the id attribute of the control</td>
+                   <td>inline</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td id="li"><a href=https://www.w3schools.com/TAGs/tag_li.asp target="_blank">&lt;li&gt;</a></td>
+                   <td>Defines a list item and is used in ordered lists <a href="#ol" title="destination">&lt;ol&gt;</a> and unordered lists &lt;ul&gt;</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td id="link"><a href=https://www.w3schools.com/TAGs/tag_link.asp target="_blank">&lt;link /&gt;</a></td>
+                   <td>Defines and establishes a link between the current HTML document and an external resource. Primary use is to link to external stylesheets via the attribute value rel="stylesheet"</td>
+                   <td>n/a</td>
+                   <td>empty</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_meta.asp target="_blank">&lt;meta&gt;</a></td>
+                   <td>Metadata is information about data and as such, the &lt;meta&gt; element - always contained within the <a href="#head" title="destination">&lt;head&gt;</a> provides metadata about the HTML document that isn't displayed on the page via its attribute name/value pairs. This info often tells browsers how to display content or reload a page and frequently specifies a page description, keywords, author of the page etc. used by search engines or other web services</td>
+                   <td>n/a</td>
+                   <td>empty</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_nav.asp target="_blank">&lt;nav&gt;</a></td>
+                   <td>Defines a set of navigational links and is intendend <em>only for major blocks of navigation links</em> although there may be other links on the page. This tag is new as of HTML5</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td id="ol"><a href=https://www.w3schools.com/TAGs/tag_ol.asp target="_blank">&lt;ol&gt;</a></td>
+                   <td>Defines an ordered list that can be numerical or alphabetical depending on the value of the 'type' attribute. Its items are definied with the <a href="#li" title="destination">&lt;li&gt;</a> tag. HTML5 introduced the 'reversed' attribute for ordered lists</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_p.asp target="_blank">&lt;p&gt;</a></td>
+                   <td>Defines a paragraph and it is generally recommended to wrap any text that is not intended for another semantically rich purpose in &lt;p&gt; tag. Browsers add a default margin before and after each &lt;p&gt; element, which can be modified or removed with CSS</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_script.asp target="_blank">&lt;script&gt;</a></td>
+                   <td>Used to define client-side scripts e.g. with JavaScript. This element either contains scripting statments or directs to an external script file via a src= attribute. If src is used, the script must be empty. Generally, &lt;script&gt; is placed at the end of the document before the closing &lt;/body&gt; tag</td>
+                   <td>either depending contents</td>
+                   <td>container or empty with src="scripts.js"</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_section.asp target="_blank">&lt;section&gt;</a></td>
+                   <td>Literally defining sections within a document, this new HTML5 tag provides wrapped content with a semantically rich, logical label. The theme of each section should be identified by including a heading element &lt;h1&gt; - &lt;h6&gt; as a child</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_strong.asp target="_blank">&lt;strong&gt;</a></td>
+                   <td>A logical tag that not only makes the wrapped text visually bold, but it also gives it the semantic meaning of "important text". Styling through CSS is still preferable, but this tag can be helpful when considering how assistive devices read text</td>
+                   <td>inline</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_style.asp target="_blank">&lt;style&gt;</a></td>
+                   <td>Contains style information via CSS rules for a document or part of the HTML document. Athough it can be placed in the <a href="#body" title="destination">&lt;body&gt;</a> element, best practice is to place styles in the <a href="#head" title="destination">&lt;head&gt;</a>. For ideal organization, would be to place CSS in an external stylesheet and apply them via <a href="#link" title="destination">&lt;link&gt;</a> elements, although there are cases when internal styling is necessary</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_table.asp target="_blank">&lt;table&gt;</a></td>
+                   <td>Defines a grouping of elements that make up an HTML table such as this one. The contained elements must include one or more &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;, but more complex tables may include sectioning elements are frequently included such as &lt;caption&gt;, &lt;tfoot&gt; and &lt;tbody&gt;</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_td.asp target="_blank">&lt;td&gt;</a></td>
+                   <td>Defines a standard cell withn an HTML table row - see &lt;tr&gt;. Unlike &lt;th&gt; header cells, these standard cells contain data and by default are regular case and left-aligned.</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_th.asp target="_blank">&lt;th&gt;</a></td>
+                   <td>Defines a header cell within an HTML table row &lt;tr&gt;. Header information, such as table column names are wrapped by this tag. By default &lt;th&gt; elements are <b>bold</b> and centered</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_th.asp target="_blank">&lt;title&gt;</a></td>
+                   <td>Required in all HTML documents, it literally defines the title of the document. Located in the <a href="#head" title="destination">&lt;head&gt;</a>, the &lt;title&gt; element:
+                       <ul>
+                           <li>provides a title in the browser toolbar and tab</li>
+                           <li>Is the label for the page when added to favorites</li>
+                           <li>Is the title that is listed for the page search-engine results</li>
+                       </ul>
+                   </td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_tr.asp target="_blank">&lt;tr&gt;</a></td>
+                   <td>The mark up for a row in an HTML table. This element contains one or more &lt;th&gt; and or &lt;td&gt; elements as its children.</td>
+                   <td>n/a</td>
+                   <td>container</td>
+               </tr>
+               <tr>
+                   <td><a href=https://www.w3schools.com/TAGs/tag_ul.asp target="_blank">&lt;ul&gt;</a></td>
+                   <td>Generates an unordered (bulleted) list and contains <a href="#li" title="destination">&lt;li&gt;</a> elements as the list items</td>
+                   <td>block</td>
+                   <td>container</td>
+               </tr>
+           </tbody>
+       </table>
      <footer>
-      <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+      <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a> ~ <a href="#top" title="destination">Back to top</a></small></p>
     </footer>
   </main>
      

@@ -1,0 +1,46 @@
+/* styles for tables */
+
+table {
+    border: 1px solid #000;
+    width: 80%;
+    margin: auto; /* centers table in parent - for block level elements */
+    border-collapse: collapse; /* only works on table element, removes doubled */
+}
+
+th {
+    background-color: #20B2AA;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+tr {
+/*    vertical-align: top*/
+}
+
+tr:nth-child(even) {
+    background-color: #20B2AA;
+    color: #fff;
+}
+
+tr:nth-child(even) a {
+    color: #fff;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: .5em;
+}
+
+/* center tags in first column - don't know why adding this to .col1 didn't work or why adding  or class=center didn't either*/
+td:first-of-type {
+    text-align: center; 
+}
+
+/* classes */
+
+.col1 {
+/*    width: 12%;*/
+}
+
+
+

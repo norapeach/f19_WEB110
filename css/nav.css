@@ -16,8 +16,9 @@
     font-size: 16px;
 }
 
+/* Add an active class to highlight the current page */
 .topnav a.hover, .active {
-    background-color: darkcyan;
+    background-color: #008B8B; /* changed from darkcyan to hexadecimal */
 }
 
 .topnav .icon {

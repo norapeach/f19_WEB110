@@ -37,13 +37,13 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color: #008B8B;
     text-decoration: none;
 }
 
 a:hover {
     color: whitesmoke;
-    background-color: darkcyan;
+    background-color: #008B8B;
     text-decoration: none;
 }
 
@@ -51,6 +51,10 @@ footer {
     clear: both;
     text-align: center;
     padding: 1em;
+}
+
+figcaption {
+    color:#708090;
 }
 
 /* Responsive rules */
