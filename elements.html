@@ -2,45 +2,45 @@
 <html lang="en">
  <head>
      <title>Nora Peachey: HTML Elements</title>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="css/portal.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/tables.css" />
+      <meta charset="utf-8" />
+      <meta name="robots" content="noindex,nofollow" />
+      <meta name="viewport" content="width=device-width" />
+      <link rel="stylesheet" href="css/nav.css" />
+      <link rel="stylesheet" href="css/tables.css" />
+     <link rel="stylesheet" href="css/portal.css" />
  </head>
  <body>
      <header id="top">
-     <h1>Nora Peachey: HTML Elements</h1>
-     <nav class="topnav" id="myTopnav">
-       <a href="index.html">Welcome</a>
-       <a href="elements.html" class="active">HTML Elements</a>
-       <a href="aia.html">AIA</a>
-       <a href="big/index.html">Final Project (BIG Website)</a>
-       <a href="http://w3schools.com" target="_blank">W3 Schools</a>
-       <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
-       <a href="flowchart.html">Flowchart</a>
-       <a href="fp/index.html">Final Project</a>
-       <a href="contact.php">Contact Nora Peachey</a>
-       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </nav>
+         <h1>Nora Peachey: HTML Elements</h1>
+         <nav class="topnav" id="myTopnav">
+           <a href="index.html">Welcome</a>
+           <a href="elements.html" class="active">HTML Elements</a>
+           <a href="aia.html">AIA</a>
+           <a href="big/index.html">Final Project (BIG Website)</a>
+           <a href="http://w3schools.com" target="_blank">W3 Schools</a>
+           <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
+           <a href="flowchart.html">Flowchart</a>
+<!--           <a href="fp/index.html">Final Project</a>-->
+           <a href="contact.php">Contact Nora Peachey</a>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
      </header>
      
    <main class="wrapper">
-       <h2 class="summary">HTML Elements</h2>
+       <h2 class="subheader">HTML Elements</h2>
        <table aria-describedby="summary">
-           <caption>The following four column table presents the HTML element information on (41) commonly used tags that I have learned thus far: </caption>
+           <caption id="summary">The following four column table presents the HTML element information on (41) commonly used tags that I have learned thus far: </caption>
            <thead>
                <tr>
-                   <th class="col1" scope="col">Tag</th>
+                   <th scope="col">Tag</th>
                    <th scope="col">Description</th>
-                   <th class="col1" scope="col">Block, Inline or N/A</th>
+                   <th scope="col">Block, Inline or N/A</th>
                    <th scope="col">Container or Empty</th>
                </tr>
            </thead>
            <tbody>
                <tr>
-                   <td><a href="https://www.w3schools.com/TAGs/tag_comment.asp" target="_blank">&lt;!-- --&gt;</a></td>
+                   <td class="col1"><a href="https://www.w3schools.com/TAGs/tag_comment.asp" target="_blank">&lt;!-- --&gt;</a></td>
                    <td>HTML comments are invisible on a browser unless the source code is viewed. They are used to provide instructions and credit</td>
                    <td>n/a</td>
                    <td>container</td>
@@ -133,10 +133,10 @@
                    <td><a href="https://www.w3schools.com/TAGs/tag_footer.asp" target="_blank">&lt;footer&gt;</a></td>
                    <td>Defines the footer of the document or section and can be used more than once in a document. This tag usually contains:
                        <ul>
-                        <li>authorship information</li>
-                        <li>copyright information</li>
-                        <li>contact information</li>
-                        <li>back to top links</li>
+                        <li>+ authorship information</li>
+                        <li>+ copyright information</li>
+                        <li>+ contact information</li>
+                        <li>+ back to top links</li>
                        </ul>
                    </td>
                    <td>block</td>
@@ -186,7 +186,7 @@
                </tr>
                <tr>
                    <td><a href=https://www.w3schools.com/TAGs/tag_input.asp target="_blank">&lt;input&gt;</a></td>
-                   <td>Used within the &lt;input&gt; element to specify an input field where the user can enter data. The input field itself can vary greatly in its look and function depending on the value passed to the <em><a href=”https://www.w3schools.com/TAGs/att_input_type.asp”>type attribute</a></em></td>
+                   <td>Used within the &lt;input&gt; element to specify an input field where the user can enter data. The input field itself can vary greatly in its look and function depending on the value passed to the <a href=”https://www.w3schools.com/TAGs/att_input_type.asp”>type attribute</a></td>
                    <td>inline</td>
                    <td>container</td>
                </tr>
@@ -198,7 +198,7 @@
                </tr>
                <tr>
                    <td id="li"><a href=https://www.w3schools.com/TAGs/tag_li.asp target="_blank">&lt;li&gt;</a></td>
-                   <td>Defines a list item and is used in ordered lists <a href="#ol" title="destination">&lt;ol&gt;</a> and unordered lists &lt;ul&gt;</td>
+                   <td>Defines a list item and is used in ordered lists <a href="#ol" title="go to <ol> tag">&lt;ol&gt;</a> and unordered lists &lt;ul&gt;</td>
                    <td>block</td>
                    <td>container</td>
                </tr>
@@ -210,7 +210,7 @@
                </tr>
                <tr>
                    <td><a href=https://www.w3schools.com/TAGs/tag_meta.asp target="_blank">&lt;meta&gt;</a></td>
-                   <td>Metadata is information about data and as such, the &lt;meta&gt; element - always contained within the <a href="#head" title="destination">&lt;head&gt;</a> provides metadata about the HTML document that isn't displayed on the page via its attribute name/value pairs. This info often tells browsers how to display content or reload a page and frequently specifies a page description, keywords, author of the page etc. used by search engines or other web services</td>
+                   <td>Metadata is information about data and as such, the &lt;meta&gt; element - always contained within the <a href="#head" title="go to <head> tag">&lt;head&gt;</a> provides metadata about the HTML document that isn't displayed on the page via its attribute name/value pairs. This info often tells browsers how to display content or reload a page and frequently specifies a page description, keywords, author of the page etc. used by search engines or other web services</td>
                    <td>n/a</td>
                    <td>empty</td>
                </tr>
@@ -222,7 +222,7 @@
                </tr>
                <tr>
                    <td id="ol"><a href=https://www.w3schools.com/TAGs/tag_ol.asp target="_blank">&lt;ol&gt;</a></td>
-                   <td>Defines an ordered list that can be numerical or alphabetical depending on the value of the 'type' attribute. Its items are definied with the <a href="#li" title="destination">&lt;li&gt;</a> tag. HTML5 introduced the 'reversed' attribute for ordered lists</td>
+                   <td>Defines an ordered list that can be numerical or alphabetical depending on the value of the 'type' attribute. Its items are definied with the <a href="#li" title="go to <li> tag">&lt;li&gt;</a> tag. HTML5 introduced the 'reversed' attribute for ordered lists</td>
                    <td>block</td>
                    <td>container</td>
                </tr>
@@ -235,8 +235,8 @@
                <tr>
                    <td><a href=https://www.w3schools.com/TAGs/tag_script.asp target="_blank">&lt;script&gt;</a></td>
                    <td>Used to define client-side scripts e.g. with JavaScript. This element either contains scripting statments or directs to an external script file via a src= attribute. If src is used, the script must be empty. Generally, &lt;script&gt; is placed at the end of the document before the closing &lt;/body&gt; tag</td>
-                   <td>either depending contents</td>
-                   <td>container or empty with src="scripts.js"</td>
+                   <td>both</td>
+                   <td>both</td>
                </tr>
                <tr>
                    <td><a href=https://www.w3schools.com/TAGs/tag_section.asp target="_blank">&lt;section&gt;</a></td>
@@ -252,7 +252,7 @@
                </tr>
                <tr>
                    <td><a href=https://www.w3schools.com/TAGs/tag_style.asp target="_blank">&lt;style&gt;</a></td>
-                   <td>Contains style information via CSS rules for a document or part of the HTML document. Athough it can be placed in the <a href="#body" title="destination">&lt;body&gt;</a> element, best practice is to place styles in the <a href="#head" title="destination">&lt;head&gt;</a>. For ideal organization, would be to place CSS in an external stylesheet and apply them via <a href="#link" title="destination">&lt;link&gt;</a> elements, although there are cases when internal styling is necessary</td>
+                   <td>Contains style information via CSS rules for a document or part of the HTML document. Athough it can be placed in the <a href="#body" title="go to <body> tag">&lt;body&gt;</a> element, best practice is to place styles in the <a href="#head" title="go to <head> tag">&lt;head&gt;</a>. For ideal organization, would be to place CSS in an external stylesheet and apply them via <a href="#link" title="go to <link> tag">&lt;link&gt;</a> elements, although there are cases when internal styling is necessary</td>
                    <td>n/a</td>
                    <td>container</td>
                </tr>
@@ -276,11 +276,11 @@
                </tr>
                <tr>
                    <td><a href=https://www.w3schools.com/TAGs/tag_th.asp target="_blank">&lt;title&gt;</a></td>
-                   <td>Required in all HTML documents, it literally defines the title of the document. Located in the <a href="#head" title="destination">&lt;head&gt;</a>, the &lt;title&gt; element:
+                   <td>Required in all HTML documents, it literally defines the title of the document. Located in the <a href="#head" title="go to <head> tag">&lt;head&gt;</a>, the &lt;title&gt; element:
                        <ul>
-                           <li>provides a title in the browser toolbar and tab</li>
-                           <li>Is the label for the page when added to favorites</li>
-                           <li>Is the title that is listed for the page search-engine results</li>
+                           <li>+ provides a title in the browser toolbar and tab</li>
+                           <li>+ Is the label for the page when added to favorites</li>
+                           <li>+ Is the title that is listed for the page search-engine results</li>
                        </ul>
                    </td>
                    <td>n/a</td>
@@ -294,14 +294,14 @@
                </tr>
                <tr>
                    <td><a href=https://www.w3schools.com/TAGs/tag_ul.asp target="_blank">&lt;ul&gt;</a></td>
-                   <td>Generates an unordered (bulleted) list and contains <a href="#li" title="destination">&lt;li&gt;</a> elements as the list items</td>
+                   <td>Generates an unordered - bulleted - list and contains <a href="#li" title="go to <li> tag">&lt;li&gt;</a> elements as the list items</td>
                    <td>block</td>
                    <td>container</td>
                </tr>
            </tbody>
        </table>
      <footer>
-      <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a> ~ <a href="#top" title="destination">Back to top</a></small></p>
+      <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a> ~ <a href="#top" title="return to top of page">Back to top</a></small></p>
     </footer>
   </main>
      
