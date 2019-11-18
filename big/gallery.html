@@ -5,8 +5,11 @@
      <meta charset="utf-8" />
      <meta name="robots" content="noindex,nofollow" />
      <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" href="css/normalize.css" />
+     <link rel="stylesheet" href="css/reset.css" />
      <link rel="stylesheet" href="css/big.css" />
      <link rel="stylesheet" href="css/nav.css" />
+     <link rel="stylesheet" href="css/lightbox.css"  />
      <!-- jQuery -->
      <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
      <!-- MenuMaker Plugin -->
@@ -18,9 +21,9 @@
      <script src="js/script.js"></script>
  </head>
  <body>
-     <main>
+     <main id="top">
          <header>
-             <h1><a href="index.html">Web Developer Examples and Resources by Nora</a></h1>
+             <h1><a href="index.html">Web Developer Examples &amp; Resources <span class="myName">by Nora</span></a></h1>
              <nav id="cssmenu">
                   <ul>
                      <li><a href="../index.html"><i class="fa fa-fw fa-institution" aria-hidden="true"></i> WEB110</a></li>
@@ -33,7 +36,7 @@
                            <li><a href="forms.html"><i class="fa fa-check-square-o" aria-hidden="true"></i> HTML Forms</a></li>
                         </ul>
                      </li>
-                     <li><a href="gallery.html"><i class="fa fa-fw fa-camera-retro" aria-hidden="true"></i> Lightbox II Gallery</a></li>
+                     <li class="active"><a href="gallery.html"><i class="fa fa-fw fa-camera-retro" aria-hidden="true"></i> Lightbox II Gallery</a></li>
                      <!-- Drop down for Google Tools -->
                      <li><a href="#">Google Tools</a>
                         <ul>
@@ -48,8 +51,31 @@
         </header>
         <!-- START LEFT COLUMN -->
         <section>
-            <h2 class="subheader">Lightbox II Gallery</h2>
-            <p>This will be updated with content once I watch the supporting instruction video</p>
+            <h2 class="largeSubheader">Lightbox II Gallery</h2>
+            <div class="gallery">
+                <figure>
+                    <a href="images/violetsAtticPoster626x960.jpeg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Poster for Violet's Attic - Photo by Bruce Claton Tom">
+                        <img src="images/violetsAtticPoster_BruceClatonTomW226_TN.jpeg" alt="Image of Violet's Attic Nordo production"/></a>
+                        <figcaption>Violet's Attic</figcaption>
+                        <a href="images/violetsAttic_hairCutOriginal.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Scene from Violet's Attic - Photo by Bruce Claton Tom"></a>
+                        <a href="images/VioletsAtticChair639x960.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Scene from Violet's Attic - Photo by Bruce Claton Tom"></a>
+                        <a href="images/VioletsatticJillCastOriginal.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Scene from Violet's Attic - Photo by Bruce Claton Tom"></a>
+                </figure>
+                <figure>
+                    <a href="images/Nordo_ChampagneWidow_PosterOriginal.png" data-lightbox="image-1" data-lightbox="Nordo" data-title="Poster for Champagne Widow - Photo by Joe Hein">
+                        <img src="images/Nordo_ChampagneWidow_JoeHeinW226_TN.png" alt="Poster of theater production Champagne Widow"/></a>
+                        <figcaption>The Champagne Widow</figcaption>
+                        <a href="images/ChampagnWidowComet.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Scene from The Champagne Widow: Vueve Clicqout's comet wine - Photo by Bruce Clayton Tom"></a> 
+                        <a href="images/ChampagnWidow_ChorusOriginal.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Scene from The Champagne Widow: the best bottles of Champagne - Photo by Bruce Clayton Tom"></a>
+                </figure>
+                <figure>
+                    <a href="images/HotelNordoPosterOrig.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Poster for Hotel Nordo - Photo by John Cornicello">
+                        <img src="images/HotelNordoPoster_TN.png" alt="Poster of theater production Hotel Nordo"/></a>
+                        <figcaption>Hotel Nordo</figcaption>
+                        <a href="images/HotelNordoPosterOriginal.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Promo for Hotel Nordo - Photo by John Cornicello"></a>
+                        <a href="images/HotelNordoSetOriginal.jpg" data-lightbox="image-1" data-lightbox="Nordo" data-title="Scene from Hotel Nordo - Photo by Bruce Clayton Tom"></a>
+                </figure>
+            </div>
         </section>
         <!-- END LEFT COLUMN -->
 
@@ -57,19 +83,19 @@
         <aside>
             <h3>Additional Image Galleries Resources</h3>
               <ul>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
+                  <li><a href="https://www.w3schools.com/howto/howto_js_lightbox.asp">w3Schools: Basic Lightbox (Modal Image) Tutorial</a></li>
+                  <li><a href="https://css-tricks.com/adaptive-photo-layout-with-flexbox/">CSS-Tricks: Flexbox Photo Masonry Layout</a></li>
+                  <li><a href="https://codepen.io/mmgolden/pen/YrGddm">Codepen: Responsive Image Gallery with jQuery Lightbox</a></li>
               </ul>
         </aside>
         <!-- END RIGHT COLUMN -->
        
 
          <footer>
-          <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+          <p><small>&copy; 2019 by <a href="contact.php">Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a> ~ <a href="#top" title="return to top of page">Back to top</a></small></p>
          </footer>
-    </main>
-     
-     
- </body>
+     </main>
+    
+     <script src="js/lightbox.js"></script>
+    </body>
 </html>

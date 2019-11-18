@@ -5,8 +5,11 @@
      <meta charset="utf-8" />
      <meta name="robots" content="noindex,nofollow" />
      <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" href="css/normalize.css" />
+     <link rel="stylesheet" href="css/reset.css" />
      <link rel="stylesheet" href="css/big.css" />
      <link rel="stylesheet" href="css/nav.css" />
+     <link rel="stylesheet" href="css/contactForms.css" />
      <!-- jQuery -->
      <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
      <!-- MenuMaker Plugin -->
@@ -19,8 +22,8 @@
  </head>
  <body>
      <main>
-         <header>
-             <h1><a href="index.html">Web Developer Examples and Resources by Nora</a></h1>
+         <header id="top">
+             <h1><a href="index.html">Web Developer Examples  &amp; Resources <span class="myName">by Nora</span></a></h1>
              <nav id="cssmenu">
                   <ul>
                      <li><a href="../index.html"><i class="fa fa-fw fa-institution" aria-hidden="true"></i> WEB110</a></li>
@@ -42,19 +45,36 @@
                            <li><a href="map.html"><i class="fa fa-fw fa-map-o" aria-hidden="true"></i> Map</a></li>
                         </ul>
                      </li>
-                     <li><a href="contact.php"><i class="fa fa-fw fa-server" aria-hidden="true"></i> Contact</a></li>
+                     <li class="active"><a href="contact.php"><i class="fa fa-fw fa-server" aria-hidden="true"></i> Contact</a></li>
                   </ul>
              </nav>
         </header>
         <!-- START LEFT COLUMN -->
         <section class="fullwidth">
             <h2 class="subheader">Contact Nora</h2>
-            <p>This will be updated with multi-field form.</p>
+            <?php
+                /*
+                 * Below are 2 different forms to be re-used       
+                 * 
+                 * Only use one at a time, comment out the other!       
+                 *
+                 */
+
+                include 'includes/contact_include.php'; #site keys & code here
+
+                $toAddress = "nora.peachey@seattlecentral.edu";  //place your/your client's email address here
+                $toName = "Nora"; //place your client's name here
+                $website = "Contact Form Test";  //place NAME of your client's website
+
+                //echo loadContact('simple.php');#demonstrates a simple contact form
+                echo loadContact('multiple.php');#demonstrates multiple form elements
+
+	       ?>
         </section>
         <!-- END LEFT COLUMN -->
 
         <footer>
-          <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+          <p><small>&copy; 2019 by <a href="contact.php">Nora Peachey</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a> ~ <a href="#top" title="return to top of page">Back to top</a></small></p>
         </footer>
     </main>
      

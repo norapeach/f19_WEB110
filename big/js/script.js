@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 $("#cssmenu").menumaker({
     title: "Menu",
-    breakpoint: 1018,
+    breakpoint: 1019,
     format: "multitoggle"
 });
 

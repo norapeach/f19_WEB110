@@ -5,6 +5,8 @@
      <meta charset="utf-8" />
      <meta name="robots" content="noindex,nofollow" />
      <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" href="css/normalize.css" />
+     <link rel="stylesheet" href="css/reset.css" />
      <link rel="stylesheet" href="css/big.css" />
      <link rel="stylesheet" href="css/nav.css" />
      <!-- jQuery -->
@@ -19,8 +21,8 @@
  </head>
  <body>
      <main>
-         <header>
-             <h1><a href="index.html">Web Developer Examples and Resources by Nora</a></h1>
+         <header id="top">
+             <h1><a href="index.html">Web Developer Examples &amp; Resources <span class="myName">by Nora</span></a></h1>
              <nav id="cssmenu">
                   <ul>
                      <li><a href="../index.html"><i class="fa fa-fw fa-institution" aria-hidden="true"></i> WEB110</a></li>
@@ -35,7 +37,7 @@
                      </li>
                      <li><a href="gallery.html"><i class="fa fa-fw fa-camera-retro" aria-hidden="true"></i> Lightbox II Gallery</a></li>
                      <!-- Drop down for Google Tools -->
-                     <li><a href="#">Google Tools</a>
+                     <li><a href="#" class="active">Google Tools</a>
                         <ul>
                            <li><a href="seo.html"><i class="fa fa-fw fa-desktop" aria-hidden="true"></i> SEO</a></li>
                            <li><a href="calendar.html"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Calendar</a></li>
@@ -48,25 +50,25 @@
         </header>
         <!-- START LEFT COLUMN -->
         <section>
-            <h2 class="subheader">Google Map</h2>
-            <p>This will be updated with an embeded responsive Google Map.</p>
-            <div class="embed-container">
-                <iframe src=""></iframe>
+            <h2 class="subheader">Seattle Central College</h2>
+            <p>More information about the <a href="https://it.seattlecentral.edu/programs/web-development">Web Development Certificate</a> can be found at the Information Technology Department office: BE3176</p>
+            <div class='embed-container'>
+                <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.5095685131396!2d-122.32356838446971!3d47.616225195306384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906accdcfa1037%3A0x3612bda31a0c6106!2s1701%20Broadway%2C%20Seattle%2C%20WA%2098122!5e0!3m2!1sen!2sus!4v1573417640876!5m2!1sen!2sus' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen=''></iframe>
             </div>
         </section>
         <!-- END LEFT COLUMN -->
 
         <!-- START RIGHT COLUMN -->
-        <aside>
+        <aside class="small-aside">
             <h3>Campus Contact Info</h3>
-            <address>Campus address goes here</address>
-            <a href="tel:012069343800">206.934.3800</a>
+            <address>1701 Broadway<br />Seattle, WA 98122</address>
+            <a href="tel:012069343800">(206) 934-3800</a>
         </aside>
         <!-- END RIGHT COLUMN -->
        
 
          <footer>
-          <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+          <p><small>&copy; 2019 by <a href="contact.php">Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>  ~ <a href="#top" title="return to top of page">Back to top</a></small></p>
          </footer>
     </main>
      

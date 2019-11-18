@@ -31,7 +31,7 @@
 }
 #cssmenu {
   font-family: Montserrat, sans-serif;
-  background: #333333;
+  background: rgb(95,95,95);
 }
 #cssmenu > ul > li {
   float: left;
@@ -55,12 +55,12 @@
   font-size: 12px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #dddddd;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: #ffffff;
+  color: #fff;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
@@ -72,7 +72,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #fff;
   content: '';
 }
 #cssmenu > ul > li.has-sub > a:before {
@@ -82,7 +82,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #fff;
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -133,9 +133,9 @@
   width: 170px;
   font-size: 12px;
   text-decoration: none;
-  color: #dddddd;
+  color: #fff;
   font-weight: 400;
-  background: #333333;
+  background: rgb(95,95,95);
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
@@ -143,7 +143,7 @@
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #ffffff;
+  color: #008B8B;
 }
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;
@@ -152,7 +152,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #fff;
   content: '';
 }
 #cssmenu.align-right ul ul li.has-sub > a:after {
@@ -166,7 +166,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #fff;
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -215,13 +215,16 @@
   padding-left: 35px;
 }
 #cssmenu.small-screen ul ul li a {
-  color: #dddddd;
+  color: #fff;
   background: none;
 }
-#cssmenu.small-screen ul ul li:hover > a,
-#cssmenu.small-screen ul ul li.active > a {
-  color: #ffffff;
+#cssmenu.small-screen ul ul li:hover > a {
+    color: #008B8B;
 }
+#cssmenu.small-screen ul ul li.active > a {
+    color: whitesmoke;
+}
+
 #cssmenu.small-screen ul ul,
 #cssmenu.small-screen ul ul ul,
 #cssmenu.small-screen.align-right ul ul {
@@ -240,7 +243,7 @@
 #cssmenu.small-screen #menu-button {
   display: block;
   padding: 17px;
-  color: #dddddd;
+  color: #fff;
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
@@ -253,8 +256,8 @@
   display: block;
   height: 4px;
   width: 20px;
-  border-top: 2px solid #dddddd;
-  border-bottom: 2px solid #dddddd;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   content: '';
   box-sizing: content-box;
 }
@@ -265,7 +268,7 @@
   display: block;
   height: 2px;
   width: 20px;
-  background: #dddddd;
+  background: #fff;
   content: '';
   box-sizing: content-box;
 }
@@ -274,7 +277,7 @@
   border: 0;
   height: 2px;
   width: 15px;
-  background: #ffffff;
+  background: #008B8B;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -283,7 +286,7 @@
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
   top: 23px;
-  background: #ffffff;
+  background: #008B8B;
   width: 15px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -303,7 +306,7 @@
   cursor: pointer;
 }
 #cssmenu.small-screen .submenu-button.submenu-opened {
-  background: #262626;
+  background: rgb(95,95,95);
 }
 #cssmenu.small-screen ul ul .submenu-button {
   height: 34px;
@@ -316,7 +319,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #fff;
   content: '';
 }
 #cssmenu.small-screen ul ul .submenu-button:after {
@@ -324,7 +327,7 @@
   right: 13px;
 }
 #cssmenu.small-screen .submenu-button.submenu-opened:after {
-  background: #ffffff;
+  background: #008B8B;
 }
 #cssmenu.small-screen .submenu-button:before {
   position: absolute;
@@ -333,7 +336,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #fff;
   content: '';
 }
 #cssmenu.small-screen ul ul .submenu-button:before {

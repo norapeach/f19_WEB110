@@ -5,6 +5,8 @@
      <meta charset="utf-8" />
      <meta name="robots" content="noindex,nofollow" />
      <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" href="css/normalize.css" />
+     <link rel="stylesheet" href="css/reset.css" />
      <link rel="stylesheet" href="css/big.css" />
      <link rel="stylesheet" href="css/nav.css" />
      <!-- jQuery -->
@@ -19,14 +21,14 @@
  </head>
  <body>
      <main>
-         <header>
-             <h1><a href="index.html">Web Developer Examples and Resources by Nora</a></h1>
+         <header id="top">
+             <h1><a href="index.html">Web Developer Examples &amp; Resources <span class="myName">by Nora</span></a></h1>
              <nav id="cssmenu">
                   <ul>
                      <li><a href="../index.html"><i class="fa fa-fw fa-institution" aria-hidden="true"></i> WEB110</a></li>
                      <li><a href="index.html"><i class="fa fa-fw fa-home" aria-hidden="true"></i> BIG</a></li>
                      <!-- Drop down for research pages -->
-                     <li><a href="#">Research</a>
+                     <li><a href="#" class="active">Research</a>
                         <ul>
                            <li><a href="accessibility.html"><i class="fa fa-fw fa-globe" aria-hidden="true"></i> Accessibility</a></li>
                            <li><a href="smo.html"><i class="fa fa-fw fa-thumbs-o-up" aria-hidden="true"></i> SMO</a></li>
@@ -48,32 +50,51 @@
         </header>
         <!-- START LEFT COLUMN -->
         <section>
-            <h2 class="subheader">Maximizing Exposure with SEO and SMO</h2>
-            <p>This will be updated with my research whitepaper.</p>
+            <h2 class="subheader">Maximizing Exposure with SEO &amp; SMO</h2>
+            <p>Combining a logical HTML structure with aesthetically pleasing CSS styles only allows a website to serve its purpose if users are able to find it. “Understanding how your users are finding, interacting with, and purchasing on your site will allow you to design a more user-friendly experience, eliminate unnecessary or confusing calls to action, and ultimately increase conversions. (Stelmar)” As web designers and developers, we may work with a marketing team or external specialists who create digital marketing strategies for our clients, but it is helpful that we have at least a basic understanding of these concepts in order to implement processes that can improve usability and maximize the website’s reach.</p>
+            <p>Search engine optimization (SEO) generally describes all of the efforts made in design and development to reach the highest potential ranking on search engine result pages (SERPs). (Ensor) Many basic principles of SEO actually coincide with <a href="accessibility.html" target="_blank" title="Go to: Accessibility whitepaper">web accessibility</a> standards, such as adding keyword-optimized alt text for all images on the page, using semantically rich HTML for site structure and creating clear site navigation. (Smarty)</p>
+            <p>Beyond focusing on Google search results, most websites include Facebook or Twitter buttons or configure content sharing plugins for good reason. A quick search for articles on how to get started with social media optimization (SMO) returns that integrating links to and from profiles as well as adding “like” buttons or sharing tools are crucial to increasing interaction with a website. (Dickerson) (Nutter) One key step developers can take to prepare how a website will appear when shared on Facebook and Twitter is utilizing &lt;meta&gt; tags in their HTML files that leverage the <a href="http://ogp.me/" target="_blank" title="The  Open Graph protocol: enable any web page to become a rich object in a social graph">Open Graph protocol</a>. (Coti) In his CSS-Tricks article, Adam Coti provides clear examples of which &lt;meta&gt; tags are needed and explains how these adding these tags allows the developer to alter the default image, title, description and domain name that would otherwise be displayed on Facebook and Twitter.</p>
+            <p>Putting in the effort to consider SEO keywords and customize social sharing buttons without tracking their impact leaves you and your team blind to valuable data. Widely popular, <a href="https://analytics.google.com/analytics/web/provision/#/provision" target="_blank" title="Google Analytics: free tools for digital data analysis">Google Analytics</a> is fairly to set up to analyze basic page views, can track all utilized social media platforms, and yet is customizable enough to provide insight on complex sites and web applications like CodePen. (Coyier)</p>
         </section>
         <!-- END LEFT COLUMN -->
 
         <!-- START RIGHT COLUMN -->
         <aside>
             <h3>Works Cited</h3>
-              <dl>
-                  <dt>Citation One</dt>
-                  <dd>Citation Definition</dd>
-              </dl>
-              <dl>
-                  <dt>Citation Two</dt>
-                  <dd>Citation Definition</dd>
-              </dl>
-              <dl>
-                  <dt>Citation Three</dt>
-                  <dd>Citation Definition</dd>
-              </dl>
+                <dl>
+                  <dt>Coti, Adam.</dt>
+                  <dd><a href="https://css-tricks.com/essential-meta-tags-social-media/" target="_blank">“The Essential Meta Tags for Social Media: CSS-Tricks.”</a> <i>CSS-Tricks</i>, 21 Dec. 2016.</dd>
+                </dl>
+                <dl>
+                  <dt>Coyier, Chris.</dt>
+                  <dd><a href="https://css-tricks.com/learning-use-google-analytics-effectively-codepen/" target="_blank">“Learning to Use Google Analytics More Effectively at CodePen: CSS-Tricks.”</a> <i>CSS-Tricks</i>, 26 Feb. 2017.</dd>
+                </dl>
+                <dl>
+                  <dt>Dickerson, Raquelle.</dt>
+                  <dd><a href="https://www.seo.com/blog/7-tips-for-social-media-optimization/" target="_blank">“7 Tips for Social Media Optimization.”</a> <i>SEO.com</i>, 22 Oct. 2018.</dd>
+                </dl>
+                <dl>
+                  <dt>Ensor, Simon.</dt>
+                  <dd><a href="https://www.searchenginewatch.com/2017/10/30/what-are-the-seo-benefits-of-social-media/" target="_blank">“What Are the SEO Benefits of Social Media?”</a> <i>Search Engine Watch</i>, 30 Oct. 2017.</dd>
+                </dl>
+                <dl>
+                  <dt>Nutter, Emma.</dt>
+                  <dd><a href="https://tech.co/news/5-ways-integrate-social-media-website-2015-11" target="_blank">“5 Ways to Integrate Social Media Into Your Website.”</a> <i>Tech.co</i>, 16 Nov. 2015.</dd>
+                </dl>
+                <dl>
+                  <dt>Smarty, Ann.</dt>
+                  <dd><a href="https://www.searchenginewatch.com/2019/10/21/accessibility-seo-optimize-for-both/" target="_blank">“Accessibility and SEO: Where They Overlap and How to Optimize for Both.”</a> <i>Search Engine Watch</i>, 23 Oct. 2019.</dd>
+                </dl>
+                <dl>
+                  <dt>Stelmar, Nicole.</dt>
+                  <dd><a href="https://www.convinceandconvert.com/digital-marketing/optimize-your-website-design/" target="_blank">“How to Optimize Your Website Design with the User in Mind.”</a> <i>Convince and Convert: Social Media Consulting and Content Marketing Consulting</i>,  Convince and Convert.</dd>
+                </dl>
         </aside>
         <!-- END RIGHT COLUMN -->
        
 
          <footer>
-          <p><small>&copy; 2019 by <a href="contact.php">Contact Nora Peachey </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+          <p><small>&copy; 2019 by <a href="contact.php">Nora Peachey</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a> ~ <a href="#top" title="return to top of page">Back to top</a></small></p>
          </footer>
     </main>
      
